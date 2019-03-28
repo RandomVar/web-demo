@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>购物车</title>
+<script src="cartFunction.js"></script>
+</head>
+<body>
+<h1>我的购物车</h1>
+<div id="carList">
+    <table id="mytable"  width="100%" >
+    <th>商品信息</th>
+    <th>单价</th>
+    <th>数量</th>
+    <th>照片</th>
+    <th>操作</th>
+    <tbody>
+    </tbody>
+    </table>
+</div>
+<div class="subPrice"></div>
+<a href="#" id="btnClear">清空购物车</a>
+<a href="goods.html">继续购物</a>
+</body>
+<style>
+#carList li{position:relative;padding-bottom:15px;margin-bottom:15px;border-bottom:1px solid #ddd;}
+#carList img{display:block;width:100px;}
+ .btn-close{padding:0 5px;cursor:default;}
+.btn-close:hover{background-color:#f00;color:#fff;}
+.subPrice{padding:5px 20px;color:#f00;font-weight:bold;text-align:right;}
+#carList .price{color:#f00;}
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.price::before{
+content:'￥';
+font-size:11px;
+}
+/* Table Head */
+/* Table Head */
+#mytable th {
+background-color: rgb(156, 186, 95);
+color: #fff;
+border-bottom-width: 1px;
+}
+/* Column Style */
+#mytable td {
+color: #000;
+}
+/* Heading and Column Style */
+#mytable tr {
+border-width: 1px;
+border-style: solid;
+border-color: rgb(156, 186, 95);
+}
+/* Padding and font style */
+#mytable td {
+padding: 5px 10px;
+font-size: 12px;
+font-family: Verdana;
+font-weight: bold;
+}
+#carList .price span{font-size:11px;}
+</style>
